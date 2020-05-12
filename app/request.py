@@ -1,5 +1,6 @@
 from io import BytesIO
 import pycurl
+import certifi
 import random
 import urllib.parse as urlparse
 
@@ -69,6 +70,7 @@ class Request:
 
         b_obj = BytesIO()
         crl = pycurl.Curl()
+        crl.setopt(pycurl.CAINFO, certifi.where())
         crl.setopt(crl.URL, base_url + query)
         crl.setopt(crl.USERAGENT, self.modified_user_agent)
         crl.setopt(crl.WRITEDATA, b_obj)

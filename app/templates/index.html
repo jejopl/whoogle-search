@@ -1,31 +1,71 @@
 <html>
     <head>
-        <link rel="apple-touch-icon" sizes="57x57" href="/static/img/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/static/img/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/static/img/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/static/img/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/static/img/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/static/img/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/static/img/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon/favicon-16x16.png">
-        <link rel="manifest" href="/static/img/favicon/manifest.json">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+        <link rel="manifest" href="/img/site.webmanifest">
         <meta name="referrer" content="no-referrer">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/static/img/favicon/ms-icon-144x144.png">
         <script type="text/javascript" src="/static/js/controller.js"></script>
-        <link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Whoogle Search">
+        <link rel="search" href="/opensearch.xml" type="application/opensearchdescription+xml" title="Presearch">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/static/css/main.css">
 	<title>Whoogle Search</title>
     </head>
-    <body id="main" style="display: none; background-color: {{ bg }}">
+    <body id="main" style="display: none;">
         <div class="search-container">
-            <img class="logo" src="/static/img/logo.png">
+            <svg class='logo' version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 589.8 96.4" style="enable-background:new 0 0 589.8 96.4;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#fff;}
+                </style>
+                <g>
+                    <path class="st0" d="M320,36.2c-6.4-6.8-15.4-10.6-24.6-10.4c-4.8,0-9.6,0.8-14,2.8c-4.2,1.8-7.8,4.4-11,7.6c-3,3.2-5.6,7-7.2,11.2
+                        c-1.8,4.2-2.6,8.8-2.6,13.6c0,4.6,1,9.2,2.6,13.6c1.6,4.2,4,8,7,11.2s6.8,5.8,11,7.6c4.4,1.8,9.2,2.8,14,2.8c3.2,0,6.6-0.4,9.8-1.2
+                        c3-0.8,5.8-2,8.4-3.6c2.4-1.4,4.8-3.2,6.8-5.4c2-2,3.4-4.4,4.6-6.8l-9.8-2.8c-0.8,1.8-1.8,3.4-3,4.6c-1.4,1.4-2.8,2.6-4.6,3.6
+                        s-3.6,1.8-5.6,2.2c-2,0.6-4,0.8-6,0.8c-2.8,0-5.8-0.6-8.4-1.6c-2.6-1.2-5-2.8-7-4.6c-2.2-2-3.8-4.4-5-7.2c-1.4-3-2.2-6-2.4-9.2
+                        h56.2c0-1,0-1.6,0-2.2c0-0.8,0-1.6,0-2.6c0-4.4-0.8-8.8-2.4-13C325.2,43.2,323,39.4,320,36.2z M272.6,56.2c0.2-3,1-6,2.2-8.8
+                        c1.2-2.6,2.8-5,5-7c2-2,4.4-3.4,7-4.6c8.2-3.4,17.6-1.6,24.2,4.4c2,2,3.8,4.4,5,7c1.4,3,2.2,6,2.6,9
+                        C318.6,56.2,272.6,56.2,272.6,56.2z"></path>
+                    <path class="st0" d="M250.2,68.2c-1.2-2.2-2.8-3.8-5-5.2c-2.6-1.6-5.4-3-8.2-3.8c-3.4-1-7.2-2.2-11.8-3.2c-2.8-0.6-5.2-1.4-7.4-2
+                        c-1.8-0.4-3.4-1.2-5-2c-1.2-0.6-2.2-1.6-2.8-2.8s-0.8-2.6-0.8-4c-0.2-3.4,1.4-6.6,4.4-8.4c3.2-1.8,6.8-2.8,10.6-2.6
+                        c3.8,0,7.4,0.6,11,1.8s6.8,3.2,9.6,5.6l5.2-6.8c-3.2-2.8-7-5-11.2-6.4c-4.6-1.6-9.4-2.6-14.2-2.4c-3.4,0-6.8,0.4-10.2,1.4
+                        c-3,0.8-5.8,2.2-8.2,4c-2.4,1.8-4.2,4-5.6,6.6c-1.4,2.8-2,5.8-2,9c0,2.4,0.4,4.6,1.2,6.8c1,2,2.4,3.6,4.2,4.6
+                        c2.2,1.4,4.6,2.6,7.2,3.4c3,1,6.4,2,10.6,3c3.2,0.8,6,1.6,8.4,2.2c2,0.6,4,1.4,6,2.4c1.4,0.8,2.6,1.8,3.6,3
+                        c0.8,1.2,1.2,2.8,1.2,4.2c0.2,3.4-1.6,6.4-4.4,8.2c-3.6,2.2-7.6,3.2-11.8,3c-4.2,0-8.6-0.8-12.6-2.2c-4.4-1.6-8.4-4-12-6.8
+                        l-4.8,7.6c4,3.4,8.6,5.8,13.6,7.4c5.2,1.6,10.6,2.6,16,2.6c8.2,0,14.8-1.8,19.6-5.6c4.8-4,7.4-9.6,7.2-15.4
+                        C251.8,72.8,251.4,70.4,250.2,68.2z"></path>
+                    <path class="st0" d="M588.8,43c-0.6-3.2-1.8-6.2-3.4-9c-1.6-2.6-4-4.6-6.6-6c-3.2-1.6-6.6-2.4-10.2-2.2c-5.4,0-10.6,1.4-15,4.2
+                        c-4.6,2.8-8.4,6.8-11,11.6V0h-11.2v94.8h11.4v-41c0.8-2.6,2-5,3.4-7.2c1.4-2,3.2-4,5.2-5.6s4-2.8,6.4-3.8c2.2-0.8,4.4-1.4,6.8-1.4
+                        c4.2-0.2,8.2,1.6,10.6,5.2c2.4,3.4,3.6,8.6,3.6,15.6v37.8h11V54.2C589.8,50.4,589.4,46.6,588.8,43z"></path>
+                    <path class="st0" d="M504.8,79.4c-1.2,1.2-2.6,2.4-4.2,3.2c-1.6,1-3.4,1.8-5.4,2.2c-2,0.6-4,0.8-6,0.8c-3,0-6-0.6-8.8-2
+                        c-2.8-1.2-5.2-3.2-7.2-5.4c-2-2.4-3.8-5.2-4.8-8.2v0.6c-1.2-3.2-1.8-6.6-1.8-10s0.6-6.8,1.8-10c1-3,2.6-5.6,4.8-8
+                        c2-2.2,4.4-4,7.2-5.2s5.8-1.8,8.8-1.8c3.6,0,7.2,0.8,10.4,2.6c3,1.8,5.6,4.4,7.2,7.4L518,42c-2.4-5-6.4-9.2-11-12
+                        c-5.2-3-11.4-4.6-17.4-4.4c-4.8,0-9.6,0.8-14,2.8c-4,1.8-7.8,4.4-10.8,7.6s-5.4,7-7,11c-3.4,8.8-3.4,18.4,0,27c1.6,4.2,4,8,7,11.2
+                        c6.4,6.8,15.4,10.6,24.8,10.6c6.4,0,12.6-1.6,18-4.8c2.4-1.4,4.6-3.2,6.6-5.4c1.8-2,3.2-4.4,4.4-6.8l-11.2-3.4
+                        C506.8,77,506,78.2,504.8,79.4z"></path>
+                    <path class="st0" d="M446,26.2c-4.4,0.4-8.6,2-12.2,4.8c-4,3-7,7-9.2,11.4V26.6H414v67.8h11.6V52.8c1.4-4.6,4.8-8.8,9-11.6
+                        c4.6-2.8,9.8-4.4,15.2-4.4V26.4c-0.6,0-1-0.2-1.6-0.2C448.2,26.2,446,26.2,446,26.2z"></path>
+                    <path class="st0" d="M395.6,80.6V53c0-8.6-2.4-15.4-7.4-20.2s-11.8-7.2-20.8-7.2c-9.4,0.2-18.6,3.2-26.4,8.8l3.8,7.4
+                        c7.6-5.4,14.6-8,21.6-8c9-1,17,5.6,18,14.4c0.2,1,0.2,2.2,0,3.4V57c-2.8-1.2-5.8-2-9-2.4c-3.4-0.6-6.6-0.8-10-1
+                        c-3.8,0-7.8,0.4-11.4,1.6c-3.2,1-6.4,2.4-9,4.2c-2.4,1.6-4.6,4-6,6.6c-1.4,2.6-2,5.6-2,8.4s0.6,5.8,1.8,8.4s2.8,4.8,4.8,6.6
+                        c2,2,4.6,3.4,7.2,4.4c2.8,1,5.8,1.6,8.8,1.6c5.2,0,10.2-1,14.8-3.2c4.6-2,8.6-5.2,11.4-9.2l0.2,4.8c0.2,1.8,1,3.6,2.4,4.8
+                        c1.4,1.4,3.4,2,5.4,2c0.8,0.6,1.6,0.6,2.4,0.4l3-0.4v-9.8C396.8,84.8,395.6,83.4,395.6,80.6z M384.2,74c-0.2,2-1,3.8-2.4,5
+                        c-2,2.6-4.8,4.8-8,6c-3.6,1.6-7.4,2.4-11.4,2.2c-2,0-4-0.4-5.8-1s-3.4-1.6-4.8-2.8c-1.4-1.2-2.4-2.6-3.2-4.2
+                        c-0.8-1.6-1.2-3.4-1-5.4c0-3.8,2-7.4,5.4-9.4c4.2-2.6,9-3.8,14-3.6c6,0,11.8,1,17.2,3.2L384.2,74L384.2,74z"></path>
+                    <path class="st0" d="M188.4,62.8c0-0.8,0-1.6,0-2.6c0-4.4-0.8-8.8-2.4-13c-1.6-4-3.8-7.8-6.8-11c-6.4-6.8-15.4-10.6-24.6-10.4
+                        c-4.8,0-9.6,0.8-14,2.8c-8.4,3.6-14.8,10.4-18,18.8c-1.8,4.2-2.6,8.8-2.6,13.6c0,4.6,0.8,9.2,2.6,13.6c1.6,4.2,4,8,7,11.2
+                        s6.8,5.8,11,7.6c4.4,1.8,9.2,2.8,14,2.8c3.2,0,6.6-0.4,9.8-1.2c3-0.8,5.8-2,8.4-3.6c2.4-1.4,4.8-3.2,6.8-5.4c2-2,3.4-4.4,4.6-6.8
+                        l-9.8-2.8c-0.6,1.8-1.8,3.4-3,4.6c-1.4,1.4-3,2.6-4.6,3.6c-1.8,1-3.6,1.8-5.6,2.2c-2,0.6-4,0.8-6,0.8c-2.8,0-5.8-0.6-8.4-1.6
+                        c-2.6-1.2-5-2.8-7-4.6c-2.2-2-3.8-4.4-5-7.2c-1.4-3-2.2-6-2.4-9.2h56.2C188.4,64.2,188.4,63.6,188.4,62.8z M131.8,56.2
+                        c0.2-3,1-6,2.2-8.8c1.2-2.6,2.8-5,5-7c2-2,4.4-3.4,7-4.6c8.2-3.4,17.6-1.6,24.2,4.4c2,2,3.8,4.4,5,7c1.4,3,2.2,6,2.6,9
+                        C177.8,56.2,131.8,56.2,131.8,56.2z"></path>
+                    <path class="st0" d="M58.4,11.8C56,9,53,6.8,49.6,5c-3.4-1.6-7.4-2.6-11.2-2.6H0v92.2h11.6v-33h27.6c3.8,0,7.6-0.8,11-2.4
+                        c3.2-1.6,6.2-3.8,8.6-6.6s4.4-6.2,5.4-9.6c1.4-3.6,2-7.2,2-11c0-3.6-0.6-7.2-2-10.8C62.8,17.8,60.8,14.6,58.4,11.8z M53.2,39.4
+                        c-0.8,2.2-1.8,4.4-3.2,6.2s-3,3.2-5,4.2s-4.2,1.6-6.6,1.4H11.6V13h26c2.2,0,4.4,0.4,6.4,1.4s3.8,2.4,5.4,4c3.2,3.8,5,8.6,5,13.6
+                        C54.4,34.6,54,37,53.2,39.4z"></path>
+                    <path class="st0" d="M111.2,26.4c-4.4,0.4-8.6,2-12.2,4.8c-4,3-7,7-9.2,11.4V26.8H79.2v67.8h11.4V52.8c1.6-4.6,4.8-8.8,9.2-11.4
+                        c4.6-2.8,9.8-4.4,15.2-4.4V26.6c-0.6,0-1-0.2-1.6-0.2H111.2L111.2,26.4z"></path>
+                </g>
+                </svg>
             <form action="/search" method="post">
                 <div class="search-fields">
                     <input type="text" name="q" id="search-bar" autofocus="autofocus">
@@ -33,36 +73,6 @@
                 </div>
             </form>
             <br/>
-            <button id="config-collapsible" class="collapsible">Configuration</button>
-            <div class="content">
-                <div class="config-fields">
-                    <form action="/config" method="post">
-                        <div class="config-div">
-                            <!-- TODO: Add option to regenerate user agent? -->
-                            <span class="ua-span">User Agent: {{ ua }}</span>
-                        </div>
-                        <div class="config-div">
-                            <label for="config-near">Near: </label>
-                            <input type="text" name="near" id="config-near" placeholder="City Name">
-                        </div>
-                        <div class="config-div">
-                            <label for="config-nojs">Show NoJS Links: </label>
-                            <input type="checkbox" name="nojs" id="config-nojs">
-                        </div>
-                        <div class="config-div">
-                            <label for="config-dark">Dark Mode: </label>
-                            <input type="checkbox" name="dark" id="config-dark">
-                        </div>
-                        <div class="config-div">
-                            <label for="config-url">Root URL: </label>
-                            <input type="text" name="url" id="config-url" value="">
-                        </div>
-                        <div class="config-div">
-                            <input type="submit" id="config-submit" value="Save">
-                        </div>
-                    </form>
-                </div>
-            </div>
         </div>
     </body>
 </html>

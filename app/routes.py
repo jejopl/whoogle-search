@@ -77,22 +77,6 @@ def search():
     return render_template('display.html', query=urlparse.unquote(q), response=formatted_results)
 
 
-@app.route('/config', methods=['GET', 'POST'])
-def config():
-    if request.method == 'GET':
-        return json.dumps(g.user_config)
-    else:
-        config_data = request.form.to_dict()
-        if 'url' not in config_data or not config_data['url']:
-            config_data['url'] = request.url_root
-
-        with open(app.config['STATIC_FOLDER'] + '/config.json', 'w') as config_file:
-            config_file.write(json.dumps(config_data, indent=4))
-            config_file.close()
-
-        return redirect(config_data['url'])
-
-
 @app.route('/url', methods=['GET'])
 def url():
     if 'url' in request.args:
