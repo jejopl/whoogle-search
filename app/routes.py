@@ -54,7 +54,6 @@ def opensearch():
 def search():
     request_params = request.args if request.method == 'GET' else request.form
     q = request_params.get('q')
-
     if q is None or len(q) == 0:
         return redirect('/')
     else:
@@ -63,16 +62,22 @@ def search():
             q = Fernet(app.secret_key).decrypt(q.encode()).decode()
         except InvalidToken:
             pass
-
+    
+    lang = request.headers.get('Accept-Language', '')
+    lang = lang[0:2]
+    full_lang = 'hl=' + lang + '&gl=' + lang + '&q='
     user_agent = request.headers.get('User-Agent')
     mobile = 'Android' in user_agent or 'iPhone' in user_agent
 
     content_filter = Filter(mobile, g.user_config, secret_key=app.secret_key)
     full_query = gen_query(q, request_params, content_filter.near)
-    get_body = g.user_request.send(query=full_query)
+    get_body = g.user_request.send(lang=full_lang, query=full_query)
 
     results = content_filter.reskin(get_body)
     formatted_results = content_filter.clean(BeautifulSoup(results, 'html.parser'))
+
+
+
 
     return render_template('display.html', query=urlparse.unquote(q), response=formatted_results)
 

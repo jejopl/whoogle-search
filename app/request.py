@@ -5,7 +5,7 @@ import random
 import urllib.parse as urlparse
 
 # Base search url
-SEARCH_URL = 'https://www.google.com/search?gbv=1&q='
+SEARCH_URL = 'https://www.google.com/search?gbv=1&ie=UTF-8&'
 
 MOBILE_UA = '{}/5.0 (Android 0; Mobile; rv:54.0) Gecko/54.0 {}/59.0'
 DESKTOP_UA = '{}/5.0 (X11; {} x86_64; rv:75.0) Gecko/20100101 {}/75.0'
@@ -65,13 +65,13 @@ class Request:
     def __getitem__(self, name):
         return getattr(self, name)
 
-    def send(self, base_url=SEARCH_URL, query='', return_bytes=False):
+    def send(self, base_url=SEARCH_URL, lang='', query='', return_bytes=False):
         response_header = []
 
         b_obj = BytesIO()
         crl = pycurl.Curl()
         crl.setopt(pycurl.CAINFO, certifi.where())
-        crl.setopt(crl.URL, base_url + query)
+        crl.setopt(crl.URL, base_url + lang + query)
         crl.setopt(crl.USERAGENT, self.modified_user_agent)
         crl.setopt(crl.WRITEDATA, b_obj)
         crl.setopt(crl.HEADERFUNCTION, response_header.append)
