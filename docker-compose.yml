@@ -2,7 +2,7 @@ version: "3"
 
 services:
   whoogle-search:
-    image: benbusby/whoogle-search
+    image: jejopl/whoogle-search
     container_name: whoogle-search
     ports:
       - 8888:5000
